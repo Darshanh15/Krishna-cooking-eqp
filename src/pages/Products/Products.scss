@@ -1,0 +1,52 @@
+// Products.scss
+
+.product-page {
+  padding: 3rem 0;
+  background-color: #f8f9fa;
+
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .product-card {
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease-in-out;
+    padding: 1.5rem;
+    text-align: center;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      background: #fff9e6;
+    }
+
+    h5 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

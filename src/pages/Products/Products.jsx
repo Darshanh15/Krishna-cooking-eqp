@@ -1,9 +1,13 @@
-import React from 'react'
-
-function Products() {
+import "./Products.scss";
+import Card from "../../components/Product/Card";
+const Products = () => {
   return (
-    <div>Products</div>
-  )
-}
+    <>
+      <div>
+        <Card />
+      </div>
+    </>
+  );
+};
 
-export default Products
+export default Products;
