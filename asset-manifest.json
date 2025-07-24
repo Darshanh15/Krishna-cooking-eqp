@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/Krishna-cooking-eqp/static/css/main.8eaa96ca.css",
-    "main.js": "/Krishna-cooking-eqp/static/js/main.28c997f0.js",
+    "main.css": "/Krishna-cooking-eqp/static/css/main.4e55cf75.css",
+    "main.js": "/Krishna-cooking-eqp/static/js/main.b8026698.js",
     "static/js/453.638069a3.chunk.js": "/Krishna-cooking-eqp/static/js/453.638069a3.chunk.js",
     "static/media/logo.png": "/Krishna-cooking-eqp/static/media/logo.92d49199a5c702484ad8.png",
+    "static/media/img (2).jpeg": "/Krishna-cooking-eqp/static/media/img (2).5403374d0aac873789e1.jpeg",
+    "static/media/img (1).jpeg": "/Krishna-cooking-eqp/static/media/img (1).77456054c398d358bfe0.jpeg",
+    "static/media/img (4).jpeg": "/Krishna-cooking-eqp/static/media/img (4).23553f51bb09407aa930.jpeg",
+    "static/media/img (3).jpeg": "/Krishna-cooking-eqp/static/media/img (3).baaa7c95df03048c5cee.jpeg",
     "index.html": "/Krishna-cooking-eqp/index.html",
-    "main.8eaa96ca.css.map": "/Krishna-cooking-eqp/static/css/main.8eaa96ca.css.map",
-    "main.28c997f0.js.map": "/Krishna-cooking-eqp/static/js/main.28c997f0.js.map",
+    "main.4e55cf75.css.map": "/Krishna-cooking-eqp/static/css/main.4e55cf75.css.map",
+    "main.b8026698.js.map": "/Krishna-cooking-eqp/static/js/main.b8026698.js.map",
     "453.638069a3.chunk.js.map": "/Krishna-cooking-eqp/static/js/453.638069a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8eaa96ca.css",
-    "static/js/main.28c997f0.js"
+    "static/css/main.4e55cf75.css",
+    "static/js/main.b8026698.js"
   ]
 }
