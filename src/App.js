@@ -16,6 +16,7 @@ import About from "./pages/About/About"
 import Contact from "./pages/Contact/Contact"
 import Products from './pages/Products/Products';
 import ProductDetails from './pages/Products/ProductDetails'
+import Footer from './components/Footer/Footer';
 
 // import Footer from "./components/Footer/Footer";
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
+      <Footer />
     </>
   );
 }
