@@ -33,7 +33,6 @@
 
 // export default ProductDetails;
 
-
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import products from "../../data/products";
@@ -70,44 +69,71 @@ const ProductDetails = () => {
   return (
     <section className="gallery-container py-5">
       <div className="container text-center">
-        <h1 className="display-5 fw-bold text-warning mb-2">
-          {product.title}
-        </h1>
+        <h1 className="display-5 fw-bold text-warning mb-2">{product.title}</h1>
         <p className="text-muted mb-5">{product.description}</p>
-        <div className="product-image">
+        {/* <div className="product-image">
           {product.images.map((src, i) => (
             <div
               className="col-6 col-md-4 col-lg-3"
               key={i}
               onClick={() => handleImageClick(i)}
             >
-              <img
-                src={src}
-                alt={`img${i}`}
-                className="img-fluid rounded shadow"
-              />
+              <div className="image-wrapper">
+                <img src={src} alt={`img${i}`} className="gallery-img" />
+              </div>
             </div>
           ))}
-        </div>
+        </div> */}
+
+        <div className="product-image">
+  {product.images.map((src, i) => (
+    <div className="image-wrapper" key={i} onClick={() => handleImageClick(i)}>
+      <img
+        src={src}
+        alt={`img${i}`}
+        className="gallery-img"
+      />
+    </div>
+  ))}
+</div>
       </div>
 
       {showModal && (
         <div className="image-modal" onClick={closeModal}>
-          <span className="close-btn" onClick={closeModal}>
-            &times;
-          </span>
-          <button className="nav-btn prev" onClick={(e) => { e.stopPropagation(); showPrev(); }}>
-            ⬅
-          </button>
-          <img
-            src={product.images[currentImgIndex]}
-            alt="popup"
-            className="popup-image"
+          <div
+            className="image-modal-content"
             onClick={(e) => e.stopPropagation()}
-          />
-          <button className="nav-btn next" onClick={(e) => { e.stopPropagation(); showNext(); }}>
-            ➡
-          </button>
+          >
+            <span className="close-btn" onClick={closeModal}>
+              &times;
+            </span>
+
+            <button
+              className="nav-btn prev"
+              onClick={(e) => {
+                e.stopPropagation();
+                showPrev();
+              }}
+            >
+              ⬅
+            </button>
+
+            <img
+              src={product.images[currentImgIndex]}
+              alt="popup"
+              className="popup-image"
+            />
+
+            <button
+              className="nav-btn next"
+              onClick={(e) => {
+                e.stopPropagation();
+                showNext();
+              }}
+            >
+              ➡
+            </button>
+          </div>
         </div>
       )}
     </section>
